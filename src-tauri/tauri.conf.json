@@ -1,9 +1,9 @@
 {
   "build": {
-    "beforeDevCommand": "npm run dev",
-    "beforeBuildCommand": "npm run build",
-    "devPath": "http://localhost:1420",
-    "distDir": "../build",
+    "beforeDevCommand": "deno run -A bundle.ts",
+    "beforeBuildCommand": "deno run -A build.ts",
+    "devPath": "http://localhost:3000",
+    "distDir": "../src-deno",
     "withGlobalTauri": false
   },
   "package": {
